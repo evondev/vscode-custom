@@ -49,3 +49,14 @@
     #20e3b2
   );
 }
+/* hide border top */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.active.tab-border-top
+  > .tab-border-top-container {
+  display: none !important;
+}
