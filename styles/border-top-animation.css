@@ -1,12 +1,5 @@
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-container
-  > .tab.active.tab-border-top
-  > .tab-border-top-container {
-  background-size: 400% 400%;
+.tabs-container > .tab.active.tab-border-top > .tab-border-top-container {
+  background-size: 400% 400% !important;
   background-image: linear-gradient(
     -45deg,
     #fc6c8f,
@@ -17,9 +10,9 @@
     #ffcc70,
     #c850c0,
     #4158d0
-  );
-  animation: gradient 5s ease alternate infinite;
-  height: 3px;
+  ) !important;
+  animation: gradient 5s ease alternate infinite !important;
+  height: 3px !important;
 }
 @keyframes gradient {
   0% {
