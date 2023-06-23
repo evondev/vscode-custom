@@ -1,0 +1,60 @@
+:root {
+  --direction: to bottom;
+}
+body
+  > div[class*="moonlight"]
+  :where(
+    .mtk4,
+    .mtk8,
+    .mtk9,
+    .mtk10,
+    .mtk11,
+    .mtk13,
+    .mtk14,
+    .mtk15,
+    .mtk17
+  ):not([class*="bracket-highlighting"]) {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+body
+  > div[class*="moonlight"]
+  :where(
+    .mtk4,
+    .mtk8,
+    .mtk9,
+    .mtk10,
+    .mtk11,
+    .mtk13,
+    .mtk14,
+    .mtk15,
+    .mtk17
+  )[class*="bracket-highlighting"] {
+  background-image: none !important;
+}
+body > div[class*="moonlight"] .mtk9 {
+  background-image: linear-gradient(var(--direction), #86e1fc 0%, #12d5f3 100%);
+}
+body > div[class*="moonlight"] .mtk8 {
+  background-image: linear-gradient(to right, #c099ff 0%, #f8adff 100%);
+}
+body > div[class*="moonlight"] .mtk4 {
+  background-image: linear-gradient(var(--direction), #ffcba8 0%, #fcb564 100%);
+}
+body > div[class*="moonlight"] .mtk11 {
+  background-image: linear-gradient(var(--direction), #9bafd9 0%, #82aaff 100%);
+}
+body > div[class*="moonlight"] .mtk10,
+body > div[class*="moonlight"] .mtk13 {
+  background-image: linear-gradient(to left, #fc806c, #ff98a4);
+}
+body > div[class*="moonlight"] .mtk14 {
+  background-image: linear-gradient(var(--direction), #ff966c 0%, #e97cbc 100%);
+}
+body > div[class*="moonlight"] .mtk15 {
+  background-image: linear-gradient(var(--direction), #fca7ea, #ff6bcb);
+}
+body > div[class*="moonlight"] .mtk17 {
+  background-image: linear-gradient(var(--direction), #4fd6be, #4dd78a);
+}
