@@ -1,0 +1,124 @@
+{
+  "editor.fontFamily": "Dank Mono,  Arial, Helvetica, sans-serif",
+  "files.trimTrailingWhitespace": true,
+  "editor.cursorWidth": 1,
+  "explorer.confirmDelete": false,
+  "editor.minimap.renderCharacters": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "debug.console.fontSize": 14,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSaveDelay": 5000,
+  "editor.fontLigatures": true,
+  "files.exclude": {
+    "**/.history": true,
+    "**/.next": true,
+    "**/.nuxt": true
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "terminal.integrated.lineHeight": 1.3,
+  "eslint.alwaysShowStatus": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "codesnap.backgroundColor": "transparent",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.editor.untitled.hint": "hidden",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "indentRainbow.colors": [
+    "rgba(38, 70, 83,0.2)",
+    "rgba(42, 157, 143,0.2)",
+    "rgba(233, 196, 106, 0.2)",
+    "rgba(244, 162, 97,0.2)",
+    "rgba(231, 111, 81,0.2)",
+    "rgba(231, 111, 81,0.15)",
+    "rgba(231, 111, 81,0.1)",
+    "rgba(231, 111, 81,0.005)"
+  ],
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0)",
+  "indentRainbow.errorColor": "rgba(128,32,32,0)",
+  "[html]": {
+    "editor.matchBrackets": "never"
+  },
+  "[css]": {
+    "editor.matchBrackets": "never"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "html.format.wrapLineLength": 70,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "gitlens.codeLens.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.inlayHints.enabled": "on",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.lineHeight": 30,
+  "glean.showConversionWarning": false,
+  "glean.useExportDefault": true,
+  "explorer.compactFolders": false,
+  "color-highlight.markerType": "underline",
+  "editor.renderLineHighlight": "none",
+  "window.zoomLevel": 1.75,
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "editor.wordWrap": "bounded",
+  "console-ninja.featureSet": "Pro",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": false,
+  "css.lint.unknownProperties": "ignore",
+  "workbench.editor.centeredLayoutFixedWidth": true,
+  "editor.renderWhitespace": "none",
+  "scss.lint.unknownProperties": "ignore",
+  "workbench.iconTheme": "symbols",
+  "workbench.startupEditor": "none",
+  "terminal.integrated.env.osx": {},
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    ".*Class",
+    ".*ClassName"
+  ],
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.colorTheme": "Moonlight II",
+  "window.newWindowDimensions": "maximized",
+  "editor.semanticHighlighting.enabled": true,
+  "workbench.fontAliasing": "antialiased",
+  "totalTypeScript.hideAllTips": true,
+  "editor.linkedEditing": true,
+  "workbench.colorCustomizations": {
+    "editor.linkedEditingBackground": "#ffffff00",
+    "selection.background": "#828bb828"
+  },
+  "symbols.hidesExplorerArrows": false,
+  "[markdown]": {
+    "editor.wordWrap": "bounded"
+  },
+  "editor.letterSpacing": 0.5,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.letterSpacing": 0.5,
+  "editor.fontSize": 14
+}
