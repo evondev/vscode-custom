@@ -1,0 +1,47 @@
+/* Dracula theme */
+:root {
+  --gradient-dir1: to top;
+  --gradient-dir2: to right;
+  --gradient-dir3: to left;
+  --gradient-dir4: to left;
+  --gradient-dir5: to top left;
+  --gradient-dir6: to left top;
+  --size: 5px;
+  --border-size: 2.5px;
+  --gradient-primary: #fcb564, #ff65f2, #d66efd;
+  --gradient-secondary: linear-gradient(245deg, #fcb564, #ff65f2);
+}
+body
+  > div[class*="Dracula-"]
+  :where(.mtk5, .mtk9, .mtk10, .mtk15, .mtk16, .mtk17, .mtk26) {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body > div[class*="Dracula-"] :where(.mtk10, .mtk15) {
+  background-image: linear-gradient(to bottom, #fc806c, #ff1bd1);
+}
+body > div[class*="Dracula-"] :where(.mtk5, .mtk26) {
+  background-image: linear-gradient(to right top, #4dd78a, #20e3b2);
+}
+body > div[class*="Dracula-"] :where(.mtk26) {
+  font-style: italic;
+}
+body > div[class*="Dracula-"] :where(.mtk9, .mtk17) {
+  background-image: linear-gradient(to bottom, #00fdff, #2979ff);
+}
+body > div[class*="Dracula-"] :where(.mtk16) {
+  background-image: linear-gradient(to bottom, #9a86fd, #6a5af9);
+}
+body > div[class*="Dracula-"] :where(.mtk3) {
+  color: #92b4d5;
+}
+
+body > div[class*="Dracula-"] :where(.mtk18, .mtk7) {
+  color: #cbdaff;
+}
+
+body > div[class*="Dracula-"] :where(.mtk13) {
+  color: white;
+}
