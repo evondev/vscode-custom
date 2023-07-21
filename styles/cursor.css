@@ -1,3 +1,8 @@
 .cursors-layer .cursor {
-  background-image: linear-gradient(245deg, var(--gradient-primary)) !important;
+  background-image: linear-gradient(
+    245deg,
+    #fcb564,
+    #ff65f2,
+    #d66efd
+  ) !important;
 }
