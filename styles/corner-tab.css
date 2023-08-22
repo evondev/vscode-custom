@@ -1,0 +1,29 @@
+.tabs-container > .tab {
+  border-right: 0 !important;
+}
+.tabs-and-actions-container {
+  padding: 4px !important;
+}
+
+.tabs-container {
+  gap: 8px !important;
+}
+.tabs-container > .tab.active.tab-border-top > .tab-border-top-container {
+  --general-gradient-secondary: #fcb564, #ff65f2, #ff69cf;
+  height: 0.5px !important;
+  background-image: linear-gradient(
+    to right,
+    var(--general-gradient-secondary)
+  );
+  width: 50% !important;
+  left: 50% !important;
+  transform: translate3d(-50%, 0%, 0) !important;
+  top: -1px !important;
+}
+.tabs-container > .tab {
+  border-radius: 100px;
+  border-color: rgba(255, 255, 255, 0.12) rgb(25, 26, 33)
+    rgba(255, 255, 255, 0.12) rgba(255, 255, 255, 0.12);
+  border-style: solid;
+  border-width: 1px 0 0 0;
+}
