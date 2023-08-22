@@ -10,6 +10,10 @@
 
 ![](./4corner.png)
 
+### rounded
+
+![](./rounded-tab.png)
+
 ## Instruction
 
 Please install extension [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) and follow extension instruction
