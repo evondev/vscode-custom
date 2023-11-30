@@ -1,0 +1,60 @@
+.tabs-container > .tab.active.tab-border-top > .tab-border-top-container {
+  height: 1px !important;
+  background-image: linear-gradient(
+    to right,
+    #00aefd,
+    #20e3b2,
+    #fcb564,
+    #ff65f2,
+    #ff69cf
+  );
+  width: 50% !important;
+  left: 50% !important;
+  transform: translate3d(-50%, 0%, 0) !important;
+  top: 0 !important;
+  background-size: 200% 200%;
+  animation: gradient 5s linear infinite;
+}
+.tabs-container > .tab {
+  border-radius: 0;
+  border-color: rgba(255, 255, 255, 0.12) rgb(25, 26, 33)
+    rgba(255, 255, 255, 0.12) rgba(255, 255, 255, 0.12);
+  border-style: solid;
+  border-width: 0;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.tabs-container > .tab.active {
+  box-shadow: inset 0 -7px 11px #a48fff1f;
+  border-top-width: 1px;
+}
+.tabs-container > .tab:before {
+  content: "";
+  border-radius: inherit;
+  background: linear-gradient(
+    90.01deg,
+    rgba(229, 156, 255, 0.24) 0.01%,
+    rgba(186, 156, 255, 0.24) 50.01%,
+    rgba(156, 178, 255, 0.24) 100%
+  );
+  inset: 0;
+  position: absolute;
+  pointer-events: none;
+  --mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

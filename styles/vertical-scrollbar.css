@@ -1,0 +1,4 @@
+.editor-container .monaco-scrollable-element > .scrollbar.vertical > .slider {
+  background-image: linear-gradient(to top, #ffb86c, #ff6bcb);
+  width: 3px !important;
+}
