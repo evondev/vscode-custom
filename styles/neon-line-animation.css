@@ -1,0 +1,66 @@
+:root {
+  --line-width: 1px;
+  --line-color: #adbbff;
+  --start-angle: 0deg;
+  --delay: 0s;
+  --easing: linear;
+  --angle: 0deg;
+}
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+.tab.active {
+  border-radius: 20px !important;
+  box-shadow: inset 0 1px 1px 0 rgba(199, 211, 234, 0.12),
+    inset 0 24px 48px 0 rgba(199, 211, 234, 0.05),
+    0 24px 32px 0 rgba(6, 6, 14, 0.7);
+}
+.tab-border-top-container {
+  animation: spinner 6s var(--easing) infinite,
+    opacityz 3s var(--easing) infinite;
+  filter: drop-shadow(0 0 10px #adbbff);
+  width: 100% !important;
+  height: 100% !important;
+  background-color: transparent !important;
+  filter: drop-shadow(0 0 10px var(--line-color));
+  border-radius: inherit;
+}
+
+.tab-border-top-container:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: var(--line-width);
+  background: conic-gradient(
+    from calc(var(--angle) + var(--start-angle)),
+    transparent 0,
+    var(--line-color) 20%,
+    transparent 25%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: inherit;
+}
+@keyframes opacityz {
+  0% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+@keyframes spinner {
+  100% {
+    --angle: 360deg;
+  }
+}
