@@ -1,0 +1,114 @@
+:root {
+  --tab-gradient1: #407cff 318deg, #da8bff 1turn;
+  --tab-gradient2: #ff65f2 318deg, #fcb564 1turn;
+  --size: 1.5px;
+  --duration: 3s;
+  --general-gradient-secondary: #fcb564, #ff65f2, #ff69cf;
+  --ease: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+body
+  > div
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab {
+  border-right: 0 !important;
+}
+
+[class*="bracket-highlighting"] {
+  font: inherit !important;
+  font-family: "Inconsolata" !important;
+  font-size: calc(100% + 1px) !important;
+  font-weight: 400 !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before {
+  border: 0;
+  width: 1.5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    var(--general-gradient-secondary)
+  );
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .badge
+  .badge-content {
+  background-image: linear-gradient(45deg, var(--general-gradient-secondary));
+}
+.monaco-workbench .monaco-editor .cursors-layer .cursor {
+  background-image: linear-gradient(245deg, var(--general-gradient-secondary));
+}
+.monaco-workbench .monaco-editor .inline-folded:after {
+  content: "";
+}
+.tab-border-top-container {
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: var(--size);
+  width: calc(100% - 1px) !important;
+  height: calc(100% - 1px) !important;
+  background-color: transparent !important;
+  border-radius: inherit;
+  box-sizing: border-box;
+}
+.tab-border-top-container:before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: spinner var(--duration) cubic-bezier(0.445, 0.05, 0.55, 0.95)
+    infinite;
+  background: conic-gradient(
+      from 0deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 289.4deg,
+      var(--tab-gradient1)
+    ),
+    conic-gradient(
+      from 180deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 287.46deg,
+      var(--tab-gradient2)
+    );
+  border-radius: inherit;
+}
+@keyframes spinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+.tab {
+  overflow: hidden;
+}
+.tab.active {
+  border-radius: 100px !important;
+  box-shadow: inset 0 1px 1px 0 rgba(199, 211, 234, 0.12),
+    inset 0 24px 48px 0 rgba(199, 211, 234, 0.05),
+    0 24px 32px 0 rgba(6, 6, 14, 0.7);
+}

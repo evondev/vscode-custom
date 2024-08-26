@@ -1,0 +1,62 @@
+body
+  > div[class*="Dracula-evondev-author"]
+  :where(.mtk11, .mtk16, .mtk6, .mtk3, .mtk15) {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body > div[class*="Dracula-evondev-author"] :where(.mtk26) {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #ff1bd1, #ff69cf, #ffb86c);
+}
+
+body > div[class*="Dracula-evondev-author"] :where(.mtk11) {
+  background-image: linear-gradient(to bottom, #fc806c, #ff1bd1);
+}
+body > div[class*="Dracula-evondev-author"] :where(.mtk6) {
+  background-image: linear-gradient(-45deg, #4dd78a, #20e3b2);
+}
+body > div[class*="Dracula-evondev-author"] :where(.mtk16) {
+  background-image: linear-gradient(to bottom, #00fdff, #2979ff);
+}
+body > div[class*="Dracula-evondev-author"] :where(.mtk3) {
+  background-image: linear-gradient(to bottom, #ffb86c, #ff979a);
+}
+
+body > div[class*="Dracula-evondev-author"] :where(.mtk15) {
+  background-image: linear-gradient(to bottom, #bd98ff, #978df8);
+}
+body
+  > div[class*="Dracula-evondev-author"]
+  :where(.mtk7, .mtk13, .mtk18, .mtk8) {
+  color: #cbdaff;
+}
+body > div[class*="Dracula-evondev-author"] .mtkb {
+  -webkit-font-smoothing: auto;
+  font-weight: normal;
+}
+body > div[class*="Dracula-evondev-author"] .view-line {
+  -webkit-font-smoothing: default;
+}
+.editor-instance[data-mode-id="markdown"] .view-line,
+.editor-instance[data-mode-id="plaintext"] .view-line {
+  font-family: "SF Mono", Arial, Helvetica, sans-serif;
+  font-size: 90%;
+}
+body > div[class*="Dracula-evondev-author"] :where(.mtk14) {
+  color: #cbdaff;
+}
+.monaco-editor [class*="TextEditorDecorationType"]::after,
+body > div[class*="Dracula-evondev-author"] :where(.mtk14, .mtk9, .mtk25) {
+  font-family: "Zed mono";
+  font-size: 90%;
+  font-weight: 300;
+}
+body > div[class*="Dracula-evondev-author"] :where(.mtk26) {
+  font-family: "SF mono";
+}
