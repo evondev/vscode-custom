@@ -46,17 +46,14 @@ body > div[class*="Dracula-evondev-author"] .view-line {
 .editor-instance[data-mode-id="markdown"] .view-line,
 .editor-instance[data-mode-id="plaintext"] .view-line {
   font-family: "SF Mono", Arial, Helvetica, sans-serif;
-  font-size: 90%;
+  font-size: 13px;
 }
 body > div[class*="Dracula-evondev-author"] :where(.mtk14) {
   color: #cbdaff;
 }
-.monaco-editor [class*="TextEditorDecorationType"]::after,
-body > div[class*="Dracula-evondev-author"] :where(.mtk14, .mtk9, .mtk25) {
-  font-family: "Zed mono";
-  font-size: 90%;
-  font-weight: 300;
-}
 body > div[class*="Dracula-evondev-author"] :where(.mtk26) {
   font-family: "SF mono";
+}
+body > div[class*="Dracula-evondev-author"] :where(.mtk27) {
+  font-family: "Zed mono";
 }
